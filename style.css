@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- 顶部欢迎图片 ---------- */
+/* ---------- top bar ---------- */
 
 .welcome-banner {
     position: relative;
@@ -21,7 +21,6 @@ body {
     width: 100%;
 }
 
-/* 图片底部渐变 */
 .welcome-banner::after {
     content: "";
     position: absolute;
@@ -39,15 +38,14 @@ body {
     pointer-events: none;
 }
 
-/* ---------- 下半部分 ---------- */
+/* ---------- bottom part ---------- */
 
 .intro {
     position: relative;
     isolation: isolate;
     min-height: 620px;
     padding: 20px 0 40px;
-
-    /* 灰色点阵 */
+    
     background-image: radial-gradient(
         circle,
         #d5d5d5 1px,
@@ -55,8 +53,6 @@ body {
     );
     background-size: 30px 30px;
 }
-
-/* ---------- 大标题 ---------- */
 
 .intro > h1 {
     position: absolute;
@@ -70,8 +66,6 @@ body {
     letter-spacing: -1px;
     font-weight: 900;
 }
-
-/* ---------- 中间文字 ---------- */
 
 .intro-content {
     position: relative;
@@ -97,7 +91,7 @@ body {
     font-size: 11px;
 }
 
-/* ---------- 照片容器 ---------- */
+/* ---------- Photo---------- */
 
 .photo-grid {
     position: absolute;
@@ -108,7 +102,6 @@ body {
     z-index: 0;
 }
 
-/* 保留原图比例，直角照片 */
 .photo-grid img {
     position: absolute;
     display: block;
@@ -117,7 +110,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
 }
 
-/* ---------- 七张照片的位置 ---------- */
+/* ---------- Photo position ---------- */
 
 /* 左上 */
 .photo-grid .photo1 {
@@ -175,7 +168,7 @@ body {
     transform: rotate(7deg);
 }
 
-/* 第二页入口：放在下半部分右下角 */
+
 .next-button {
     position: absolute;
     right: 5%;
@@ -191,16 +184,14 @@ body {
     height: auto;
 }
 
-/* 鼠标经过或键盘选中时稍微放大 */
 .next-button:hover,
 .next-button:focus-visible {
     transform: scale(1.08);
 }
 
-/* ---------- 第二页 ---------- */
 
+/* ---------- Page2 ---------- */
 
-/* 中间的说明书区域 */
 .specifications {
     width: 88%;
     max-width: 580px;
@@ -209,14 +200,12 @@ body {
     margin-top: 0%;
 }
 
-/* 小编号 */
 .spec-label {
     margin: 0 0 16px;
     font-size: 12px;
     letter-spacing: 2px;
 }
 
-/* 说明书标题 */
 .specifications h2 {
     margin: 0;
     padding-bottom: 20px;
@@ -226,12 +215,10 @@ body {
     letter-spacing: -1px;
 }
 
-/* 技能列表 */
 .skill-list {
     margin: 0;
 }
 
-/* 每行：左边名称，右边等级 */
 .skill-list > div {
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +241,7 @@ body {
     white-space: nowrap;
 }
 
-/* 返回首页 */
+
 .back-button {
     position: absolute;
     left: 5%;
@@ -276,13 +263,11 @@ body {
     transform: scale(1.08);
 }
 
-/* 中间清单放在贴纸上方 */
 .skills-page .specifications {
     position: relative;
     z-index: 1;
 }
 
-/* 贴纸定位区域 */
 .skills-page .stickers {
     position: absolute;
     inset: 0;
@@ -290,7 +275,6 @@ body {
     pointer-events: none;
 }
 
-/* 保持贴纸原来的比例 */
 .stickers .sticker {
     position: absolute;
     display: block;
@@ -342,26 +326,23 @@ body {
     accent-color: hotpink;
 }
 
-/* ---------- 第三页 ---------- */
+/* ---------- Page3 ---------- */
 
 .hire-page {
     padding-bottom: 120px;
     font-family: "Courier New", monospace;
 }
 
-/* 大标题保持前两页的字体 */
 .hire-page > h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 主体内容 */
 .hire-content {
     width: 88%;
     max-width: 1000px;
     margin: 30px auto 0;
 }
 
-/* 求职介绍 */
 .hire-reasons {
     text-align: center;
     font-size: 18px;
@@ -372,7 +353,6 @@ body {
     margin: 14px 0;
 }
 
-/* 小声补充 */
 .hire-reasons .usually {
     margin-top: -8px;
     font-size: 11px;
@@ -383,7 +363,6 @@ body {
     font-size: 22px;
 }
 
-/* 底部联系区域 */
 .hire-contact {
     margin-top: 60px;
     text-align: center;
